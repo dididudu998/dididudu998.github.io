@@ -9,4 +9,5 @@ permalink: /about/
 
 领悟啊，难啊，儒家，佛教，墨家，法家，道家有的向外，有的向内，有的舍弃今生，有的舍弃来世，不懂不懂啊
 
-
+### contact 
+[me]("mailto:miaomiaomi@outlook.com")
