@@ -10,7 +10,19 @@ Google了下，说是jedi的问题，可是我没有开启这个，然后还有�
 
 算了，直接disable这些pylint了再说
 
-这些pylint的时候，总是进行pytest，这个会拉起来很多个python的进程，导致问题重现。
+为这个问题，还装了了个glances，Mac自带的那个任务管理器用起来不是很好。
+
+```shell
+pip3 install glances
+```
+
+运行的效果是挺漂亮的，用1，2，3，4就可以有效的看到情况了。
+
+而且这个tasks的信息更明了。
+
+问题重现的时候，看到：
+
+此时的task中进行着很多个python的进程，进行pytest 测试。导致CPU被吃完了。
 
 但是前段时间是没有这样的情况的。
 
