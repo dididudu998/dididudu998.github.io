@@ -1,3 +1,13 @@
+---
+layout: post
+title: 各linux平台安装nodejs
+category: tech
+tags: [Linux]
+description: 
+---
+
+
+
 ## 问题
 
 我只能说搞毛，要做个小项目，发现CentOS7 上面安装nodejs用源码安装要用gcc进行编译，也可能是电脑慢（不可思议），编译起来感觉慢，中途给ctrl+Z了。受不了，什么年代了，装个这东西还要编译。

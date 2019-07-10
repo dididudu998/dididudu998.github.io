@@ -1,3 +1,11 @@
+---
+layout: post
+title: Ubuntu18的floopy问题
+category: tech
+tags: [Linux]
+
+---
+
 ## 问题描述
 
 在使用了Ubuntu18.04 LTS的虚拟机后，开机也好，运行一段时间也好，总会出现I/O error，fd0出错的问题。

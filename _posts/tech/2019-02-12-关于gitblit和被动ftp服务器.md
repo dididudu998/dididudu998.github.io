@@ -1,3 +1,13 @@
+---
+layout: post
+title: gitblit和被动ftp服务器
+category: tech
+tags: [Linux]
+description: 如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一看
+---
+
+
+
 # 问题
 
 由于已经设定过办公地方的gitblit服务器，这次将家用电脑配置为ftp服务器，可以从公司直接往家里传文件，省的还要通过网盘或者电脑来回对拷。

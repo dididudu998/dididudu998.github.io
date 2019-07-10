@@ -1,3 +1,13 @@
+---
+layout: post
+title: vscode抽了
+category: tech
+tags: [Linux]
+description: 如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一看
+---
+
+
+
 # 问题
 
 可能是因为升级的问题，具体我还没查出来。反正就是动不动这个python的进程后台就出来很多个，然后就听到风扇呜呜的转起来。这个这两天特别严重啊。

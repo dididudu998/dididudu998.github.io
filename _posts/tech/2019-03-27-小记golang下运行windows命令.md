@@ -1,3 +1,13 @@
+---
+layout: post
+title: golang下运行window命令
+category: tech
+tags: [Linux]
+description: 如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一看
+---
+
+
+
 # 问题
 
 前段时间用的python和nodejs做了一些web的事情，主要用于显示和封装后端的一些指令。最近在学习golang，所以，看到有需求了，就想用golang来实现。
