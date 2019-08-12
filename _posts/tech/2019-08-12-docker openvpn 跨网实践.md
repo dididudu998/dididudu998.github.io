@@ -22,7 +22,7 @@ tags: [vpn,security,docker]
 
 3. 安装docker for windows，参看这里[docker on windows wsl](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
 
-4. 重要的就是暴露出0.0.0.0:2375这个步骤
+4. 重要的就是暴露出0.0.0.0:2375这个步骤，并且服务自动启动
 
 5. 然后就是给Windows电脑部署开发人员工具，Ubuntu18.04LTS服务器
 
@@ -44,12 +44,18 @@ tags: [vpn,security,docker]
 
 10. 在已经运转正常的Windows10里面的Ubuntu18里面gitclone这个库，按照操作文档执行即可。
 
-11. 我这里因为专网前面还有一个路由器，所以做了个一个防火墙规则和端口转发的规则才可以。
+11. 为了可以让这个容器可以在Ubuntu启动后自动重启，可以使用
 
-12. 也就是普通的网络要访问UDP 3000端口，我先得设定允许inbound的访问到我的路由器所谓的公网的IP的UDP3000端口，然后还要将这个公网的UDP 3000端口转发给我现在的Windows电脑的IP的UDP 3000上面，这样才是一条完整的通路。
+    ```bash
+    docker update --restart=always container_name
+    ```
 
-13. openVPN的客户端用的是TunnelBlick这个，上面的文档有提到。忘了在哪里下载的，搜索一些也就是了。
+12. 我这里因为专网前面还有一个路由器，所以做了个一个防火墙规则和端口转发的规则才可以。
 
-14. 总之是实现了。速度还是不错的，而且还是挺稳定的。
+13. 也就是普通的网络要访问UDP 3000端口，我先得设定允许inbound的访问到我的路由器所谓的公网的IP的UDP3000端口，然后还要将这个公网的UDP 3000端口转发给我现在的Windows电脑的IP的UDP 3000上面，这样才是一条完整的通路。
+
+14. openVPN的客户端用的是TunnelBlick这个，上面的文档有提到。忘了在哪里下载的，搜索一些也就是了。
+
+15. 总之是实现了。速度还是不错的，而且还是挺稳定的。
 
 ![tunnelblick](/images/tupian/tunnelblick.jpg)
