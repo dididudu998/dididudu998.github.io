@@ -32,7 +32,7 @@ tags: [vpn,security,docker]
 
    3. 启动后，就是安装docker服务
 
-      ![ubuntu18.04](/images/tupian/ubuntuwindows.jpg)
+      ![ubuntu18.04](/images/tupian/ubuntu_in_win.jpg)
 
 6. 检验下docker服务是否正常运行，我在部署的时候发现docker服务会存在无法获得链接点的错误，后来怎么弄好的也忘记了，应该可以搜索的到解决方案
 
