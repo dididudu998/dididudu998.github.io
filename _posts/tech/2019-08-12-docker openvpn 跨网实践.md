@@ -59,3 +59,18 @@ tags: [vpn,security,docker]
 15. 总之是实现了。速度还是不错的，而且还是挺稳定的。
 
 ![tunnelblick](/images/tupian/tunnelblick.jpg)
+
+16. <b>补充</b>
+
+    1. 当将生成的profile文件，也就是.ovpn文件，是同一个用户的时候，导入openVPN客户端，在这里同时为user1账户时，发现当手机的VPN连接后，电脑的VPN就会中断。
+    2. 为此，创建另外一个账户user2来生成新的配置文件，给到不同的设备。
+    3. 配置方法和文档中提到的相同
+
+    ```bash
+    docker run -v $vpndata:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full user2 nopass
+    
+    
+    docker run -v $vpndata:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient user2 >user2.ovpn
+    ```
+
+17. 这样给除了macOS设备的其他设备使用user2这个配置就可以互相不影响了。
