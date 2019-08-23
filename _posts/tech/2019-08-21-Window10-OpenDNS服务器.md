@@ -71,49 +71,51 @@ tags: [vpn,security,Windows]
 
 8. 测试下，服务端用gui工具能不能连接成功，如果连接成功了，就开始做客户端的ovpn文件
 
-9. 客户端的ovpn文件，模版如下所示：
+9. 想要对服务端的OpenVPN实现开机自动启动，就到service里面去将OpenVPN这个服务设定为自动，然后开启即可。
 
-   > ```bash
-   > client
-   > nobind
-   > dev tun
-   > remote-cert-tls server
-   > remote myddns.domain.com 8294 udp4
-   > resolv-retry infinite
-   > keepalive 5 10
-   > persist-key
-   > persist-tun
-   > verb 3
-   > <ca>
-   > -----BEGIN CERTIFICATE-----
-   > 
-   > -----END CERTIFICATE-----
-   > </ca>
-   > 
-   > <cert>
-   > -----BEGIN CERTIFICATE-----
-   > 《这里是user1.
-   > -----END CERTIFICATE-----
-   > </cert>
-   > 
-   > <key>
-   > -----BEGIN PRIVATE KEY-----
-   > 《这里是user1.key》
-   > -----END PRIVATE KEY-----
-   > </key>
-   > 
-   > key-direction 1
-   > 154 <tls-auth>
-   > 155 #
-   > 156 # 2048 bit OpenVPN static key
-   > 157 #
-   > 158 -----BEGIN OpenVPN Static key V1-----
-   >   《这里加上ta.key的内容》
-   > 175 -----END OpenVPN Static key V1-----
-   > 176 </tls-auth>
-   > ```
+10. 客户端的ovpn文件，模版如下所示：
 
-#  重头戏
+    > ```bash
+    > client
+    > nobind
+    > dev tun
+    > remote-cert-tls server
+    > remote myddns.domain.com 8294 udp4
+    > resolv-retry infinite
+    > keepalive 5 10
+    > persist-key
+    > persist-tun
+    > verb 3
+    > <ca>
+    > -----BEGIN CERTIFICATE-----
+    > 
+    > -----END CERTIFICATE-----
+    > </ca>
+    > 
+    > <cert>
+    > -----BEGIN CERTIFICATE-----
+    > 《这里是user1.
+    > -----END CERTIFICATE-----
+    > </cert>
+    > 
+    > <key>
+    > -----BEGIN PRIVATE KEY-----
+    > 《这里是user1.key》
+    > -----END PRIVATE KEY-----
+    > </key>
+    > 
+    > key-direction 1
+    > 154 <tls-auth>
+    > 155 #
+    > 156 # 2048 bit OpenVPN static key
+    > 157 #
+    > 158 -----BEGIN OpenVPN Static key V1-----
+    >   《这里加上ta.key的内容》
+    > 175 -----END OpenVPN Static key V1-----
+    > 176 </tls-auth>
+    > ```
+
+# 重头戏
 
 会发现，当你的客户端的配置文件和服务器端的文件都好的，而且能互相连接上，日志也没有问题的时候，你的客户端却无法访问internet。
 
