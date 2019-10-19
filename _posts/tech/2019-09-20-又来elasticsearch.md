@@ -129,5 +129,5 @@ description: 闲的
 
 15. 因为本身就有nginx的机器，就做了个反向代理。
 
-    ![kibana](images/tupian/kibana.jpg)
+    ![kibana](/images/tupian/kibana.jpg)
 
