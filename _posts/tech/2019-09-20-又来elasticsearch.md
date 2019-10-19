@@ -1,6 +1,6 @@
 ---
 layout:post
-title:又来elasticsearch
+title:又搞一次elasticsearch
 category:tech
 tags:[java,elasticsearch,logstash,kibana]
 description:闲的

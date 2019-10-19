@@ -1,6 +1,6 @@
 ---
 layout:post
-title:export vmware ova with powershell
+title:用powershell导出ova
 category:tech
 tags:[ova,powershll,vmare]
 description:闲的
