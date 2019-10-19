@@ -1,9 +1,9 @@
 ---
-layout:post
-title:又搞一次elasticsearch
-category:tech
-tags:[java,elasticsearch,logstash,kibana]
-description:闲的
+layout: post
+title: 又搞一次elasticsearch
+category: tech
+tags: [java,elasticsearch,logstash,kibana]
+description: 闲的
 
 ---
 

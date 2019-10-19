@@ -1,12 +1,10 @@
 ---
-layout:post
-title:用powershell导出ova
-category:tech
-tags:[ova,powershll,vmare]
-description:闲的
-
+layout: post
+title: 用powershell导出ova
+category: tech
+tags: [ova,powershll,vmare]
+description: 闲的
 ---
-
 
 
 # 问题
