@@ -156,3 +156,7 @@ tags: [vpn,security,Windows]
 
 然后就可以愉快的上网了，做个tracerout发现，客户端先走到服务端的网关，然后再出去。说明整个的VPN实现了。
 
+补充：
+
+当你启用internet共享到TAP网卡的时候，要将TAP网卡的IP地址和DNS设定为自动获得。
+如果TAP网卡的地址不是默认的10.8.0.x的时候，客户端可以连接OpenVPN网络，但是会无法访问其他internet网络。

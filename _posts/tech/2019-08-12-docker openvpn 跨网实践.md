@@ -42,21 +42,41 @@ tags: [vpn,security,docker]
 
 9. 然后去了github的源，也就是这里[kylemanna](https://github.com/kylemanna/docker-openvpn)
 
-10. 在已经运转正常的Windows10里面的Ubuntu18里面gitclone这个库，按照操作文档执行即可。
+10. 摘抄具体步骤如下，以免github上不去了。
+    ```shell
+     OVPN_DATA="ovpn-data-example"
+     docker volume create --name $OVPN_DATA
 
-11. 为了可以让这个容器可以在Ubuntu启动后自动重启，可以使用
+    docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM
+    这里的vpn.servername.com需要替换为自己真正的服务器地址或者域名
+
+    docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it kylemanna/openvpn ovpn_initpki    
+
+    开启openvpn服务
+    docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN kylemanna/openvpn
+
+    创建证书
+    docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME nopass
+
+    导出客户端配置文件
+    docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_getclient CLIENTNAME > CLIENTNAME.ovpn```
+
+
+11. 在已经运转正常的Windows10里面的Ubuntu18里面gitclone这个库，按照操作文档执行即可。
+
+12. 为了可以让这个容器可以在Ubuntu启动后自动重启，可以使用
 
     ```bash
     docker update --restart=always container_name
     ```
 
-12. 我这里因为专网前面还有一个路由器，所以做了个一个防火墙规则和端口转发的规则才可以。
+13. 我这里因为专网前面还有一个路由器，所以做了个一个防火墙规则和端口转发的规则才可以。
 
-13. 也就是普通的网络要访问UDP 3000端口，我先得设定允许inbound的访问到我的路由器所谓的公网的IP的UDP3000端口，然后还要将这个公网的UDP 3000端口转发给我现在的Windows电脑的IP的UDP 3000上面，这样才是一条完整的通路。
+14. 也就是普通的网络要访问UDP 3000端口，我先得设定允许inbound的访问到我的路由器所谓的公网的IP的UDP3000端口，然后还要将这个公网的UDP 3000端口转发给我现在的Windows电脑的IP的UDP 3000上面，这样才是一条完整的通路。
 
-14. openVPN的客户端用的是TunnelBlick这个，上面的文档有提到。忘了在哪里下载的，搜索一些也就是了。
+15. openVPN的客户端用的是TunnelBlick这个，上面的文档有提到。忘了在哪里下载的，搜索一些也就是了。
 
-15. 总之是实现了。速度还是不错的，而且还是挺稳定的。
+16. 总之是实现了。速度还是不错的，而且还是挺稳定的。
 
 ![tunnelblick](/images/tupian/tunnelblick.jpg)
 
