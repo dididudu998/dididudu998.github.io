@@ -1,5 +1,7 @@
 # Site settings
 title: 滴滴嘟嘟博客
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "dark"
 email: miaomiaomi@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   男，80后，来自西北，喜欢吃面
@@ -47,4 +49,5 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+
 
