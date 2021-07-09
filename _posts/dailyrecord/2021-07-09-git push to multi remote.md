@@ -18,7 +18,7 @@ description: 如果你也像我一样经常工作于Windows和Linux，那么这�
 ## 过程
 
 以下面的为例，已经有了下面的远程库。
-```git
+```bash
 remote.gitlab.url=git@gitlab.com:xxxx/my_kee.git
 
 remote.github.url=git@github.com:yyyy/kees.git
@@ -28,7 +28,7 @@ remote.mypc.url=ssh://admin@zzzz:8400/kee.git
 如果不做一次性的提交，那么提交到gitlab就是git push gitlab master，其他的一样的。
 
 为了可以实现一次性的提交，这么做：
-```git
+```bash
 git remote add all git@gitlab.com:xxxx/my_kee.git
 
 git remote set-url --add --push all git@github.com:yyyy/kees.git
