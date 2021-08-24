@@ -1,3 +1,11 @@
+---
+layout: post
+title: ksmtuned 服务占了大量的cpu资源
+category: tech
+tags: [git,devops]
+description: 如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一
+---
+
 # 问题
 
 在检查netdata的数据的时候，发现有个进程占了大量的cpu资源。
