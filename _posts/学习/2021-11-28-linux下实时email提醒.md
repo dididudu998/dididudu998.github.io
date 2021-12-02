@@ -2,7 +2,7 @@
 layout: post
 title: linux下对事件进行实时email提醒
 category: 学习
-tags: [思维学习]
+tags: [思维学习,linux,security,syslog]
 ---
 
 
@@ -45,7 +45,7 @@ $ActionMailTo mark@yyy.com
 $ActionMailSubject,"Something wrong on %hostname%"
 ## only works on newest rsyslog: make sure we receive a mail only once in half an hour
 $ActionExecOnlyOnceEveryInterval 1800
-if $msg contains 'fail' then :ommail:;mailBody
+if not($msg contains '10.214.23.131') and($msg contains'fail') then :ommail:;mailBody
 $ActionExecOnlyOnceEveryInterval 0
 
 $ActionMailFrom alert@example.com
@@ -69,4 +69,10 @@ systemctl restart rsyslog
     - 重新ssh login
     - 检查是否收到邮件
     - 测试结果实现了实时的警告。
+
+## 后续
+
+对于CentOS，由于secure日志的安全性，不能直接获得ssh登陆的信息，要想拿到，可setenforce 0.然后就可以了
+
+
 
