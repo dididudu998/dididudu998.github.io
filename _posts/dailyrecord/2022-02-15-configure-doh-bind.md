@@ -63,6 +63,7 @@ options {
         allow-recursion { any; };
         listen-on { 10.214.23.216; };
         listen-on port 443 tls mytls http local-http-server { 10.214.23.216; };
+        listen-on port 8899 tls none http local-http-server { 10.214.23.216; };
         //listen-on-v6 port 443 tls mytls http local-http-server { any; };
         //listen-on-v6 { any; };
         dnssec-validation auto;
@@ -147,9 +148,9 @@ vi /etc/apparmor.d/usr.sbin.named
 ```
 
 8. restart apparmor 服务 systemctl restart apparmor
-9. 检查https查询： dig +https @dohserver.example.cn www.baidu.com A
+9. 检查https查询： dig +https @dohserver.examplecn www.baidu.com A
 10. 检查query log文件： cat /var/log/bind/query
-11. 配置浏览器安全dns： https://dohserver.example.cn/dns-query
+11. 配置浏览器安全dns： https://dohserver.examplecn/dns-query
 12. 测试是否可以正常访问网站
 13. 检查query log是否正常
 
@@ -159,9 +160,45 @@ vi /etc/apparmor.d/usr.sbin.named
 
 服务器使用的是Ubuntu20.04，安装了bind9，使用了apparmor。
 
-服务器的主机名为dohserver.example.cn，域名为example.cn。
+服务器的主机名为dohserver.examplecn，域名为examplecn。
 
-因为这个example.cn的域名由我管理，所以设定了dohserver.example.cn的A记录为10.214.23.216，内网可以解析即可。
+因为这个examplecn的域名由我管理，所以设定了dohserver.examplecn的A记录为10.214.23.216，内网可以解析即可。
+
+listen-on port 8899 tls none http local-http-server { 10.214.23.216; };
+
+这句的目的是在前端有一台nginx的服务器，在nginx的服务器上面做证书卸载。
+
+下面是nginx的配置文件：
+
+```conf
+
+upstream doh {
+        server 10.214.23.216:8899;
+        #keepalive 8;
+}
+
+
+server {
+        listen 443 ssl http2;
+        #ssl on;
+        #ssl_certificate /etc/nginx/ssl/server_1.cer;
+        ssl_certificate /etc/nginx/ssl/server.cer;
+        #ssl_certificate_key /etc/nginx/ssl/server_1.key;
+        ssl_certificate_key /etc/nginx/ssl/server.key;
+        server_name doh.examplecn;
+        access_log /var/log/nginx/doh.log;
+
+        location /dns-query {
+                grpc_pass grpc://doh;
+    }
+ }
+
+```
+
+
+浏览器在使用安全dns服务后，将请求发送给nginx服务器，nginx服务器再将请求发送给bind9服务器，bind服务器给出响应后，将响应发送给nginx服务器，nginx服务器将响应发送给浏览器。
+
+因为我的这台bind服务器是测试段，只有我和少量人可以使用，但是用nginx后，就可以发布到全体了。也就是这个事情。
 
 如果使用bind的src进行安装的话，需要的依赖必须装好，这个比较烦。但是目前centos还没有相应的package，所以先放着吧。
 
