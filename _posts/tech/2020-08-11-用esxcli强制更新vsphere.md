@@ -15,7 +15,7 @@ description:
 - 利用esxcli的强制更新profile的方式可以实现强制升级，在一定的情况下，这样的升级方式不会对系统产生问题
   
 ## 过程
-- esxcli network firewall ruleset set -e true -r httpClient
+- network firewall ruleset set -e true -r httpClient
 - 检索对应的ESXi的版本
   - esxcli software sources profile list -d https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml | grep ESXi-6.7.0-2020
   - 结果如下
