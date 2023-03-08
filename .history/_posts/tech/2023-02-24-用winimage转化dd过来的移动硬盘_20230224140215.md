@@ -1,0 +1,59 @@
+---
+layout: post
+title: 用winimage转化dd过来的移动硬盘
+category: tech
+tags: [docker,coredns]
+description: 
+---
+
+## 背景
+
+有个小同事，说是要学习，他的那个学习系统很耗费资源，想要将这个系统搞到虚拟机平台里面去。
+
+目前虚拟机平台资源足够，看在他学习热情很高，就说可以的。
+
+隔天，他拿了个移动硬盘过来。说是用dd命令备份过来的。
+
+## 经过
+
+告诉他可以在本地装个虚拟机，然后把这个移动硬盘挂上去，用dd命令备份移动硬盘到虚拟机里面去。
+
+他说他试了，不行。又拿过来了。
+
+拿来一看，电脑不识别，用diskpart试了下，认识到了新磁盘。问他原来系统是什么，他说是linux。
+
+没法，我手头没有linux机器，也没有本地的虚拟机。
+
+只好用第三方工具，用winimage转化一下。
+
+winimage是挺好的一个工具，比sysinternal的disk2vhd要更好一些。
+
+下载地址：https://www.winimage.com/download.htm
+
+下载后，安装，然后打开。
+
+选择加载可移动磁盘，就能看到外接的disk1了。
+
+![winimage](/images/tupian/winimage.jpg)
+
+然后选择保存为vhd文件，就可以了。
+
+
+输出为vhd后，还要将其转化为vmdk文件，才能在vmware虚拟机里面使用。
+
+转化为vmdk的方法，同样是在winimage里面，选择转化出来的vhd文件，然后选择转化为vmdk文件。
+
+再将vmdk传到虚拟机存储后，再引用到虚拟机里面去。就可以了。
+
+## 总结
+
+格式转化工具都还是挺好的。但是很多时候，会选择才是最好的。winimage是最好的选择。
+
+其他可以转化的工具，包括disk2vhd，startwind v2v converter，vmware converter等在不同的场合下，也能实现各自的功能。
+
+
+
+
+
+
+
