@@ -1,0 +1,95 @@
+---
+layout: post
+title: 从CentOS7 升级到RockyLinux8
+category: 学习
+tags: [Linux,RockyLinux,升级]
+
+---
+
+## 下面是完整的升级记录
+
+```shell
+	192  cat /etc/os-release
+  193  yum -y install epel-release
+  194  yum -y upgrade
+  195  reboot
+  196  yum -y install rpmconf yum-utils
+  197  rpmconf -a
+  198  yum -y install dnf
+  199  dnf -y remove yum yum-metadata-parser
+  200  rpm -e --nodeps `rpm -qa|grep centos-`
+  201  rpm -ivh --nodeps --force https://mirrors.aliyun.com/rockylinux/8/BaseOS/x86_64/os/Packages/r/rocky-release-8.9-1.6.el8.noarch.rpm
+  202  rpm -ivh --nodeps  --force https://mirrors.aliyun.com/rockylinux/8/BaseOS/x86_64/os/Packages/r/rocky-repos-8.9-1.6.el8.noarch.rpm
+  203  rpm -ivh --nodeps --force https://mirrors.aliyun.com/rockylinux/8/BaseOS/x86_64/os/Packages/r/rocky-gpg-keys-8.9-1.6.el8.noarch.rpm
+  204  dnf -y upgrade https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  205  dnf clean all
+  206  rpm -e --nodeps `rpm -qa|grep -i kernel`
+  207  vi /usr/lib/python2.7/site-packages/sitecustomize.py(option)
+  208  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  209  find /var/cache/dnf -name *dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  210  find /var/cache/dnf -name *kernel-core-4.18*
+  211  rpm -ivh --nodeps --force dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  212  find /var/cache/dnf -name *kernel-core-4.18*
+  213  rpm -ivh --nodeps --force /var/cache/dnf/baseos-3e608afeebc9a90b/packages/kernel-core-4.18.0-513.9.1.el8_9.x86_64.rpm
+  214  find /var/cache/dnf -name *dracut-network-049-228.git20230802.el8.x86_64*
+  215  rpm -ivh --nodeps --force /var/cache/dnf/baseos-3e608afeebc9a90b/packages/dracut-network-049-228.git20230802.el8.x86_64.rpm
+  216  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  ```
+  ### 卸载冲突的包
+  
+  这个要根据实际情况检查，有的确实是包冲突，要删除，有的并不是，可能是原来的repo中加载了一些rockylinux不太支持的包，需要禁用这些repo。
+  
+  ``` shell
+  217  rpm -e --nodeps sysvinit-tools-2.88-14.dsf.el7.x86_64
+  218  rpm -e --nodeps python36-six-1.14.0-2.el7.noarch
+  219  rpm -e --nodeps ython3-six-1.11.0-8.el8.noarch
+  221  rpm -e --nodeps python36-PyYAML-3.13-1.el7.x86_64
+  222  rpm -e --nodeps python-backports-ssl_match_hostname-3.5.0.1-1.el7.noarch
+  223  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  
+  228  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+ 
+  235  rpm -e --nodeps python36-six-1.14.0-3.el7.noarch
+  236  dnf install platform-python-setuptools-39.2.0-7.el8.noarch
+  237  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  238  rpm -e --nodeps platform-python-setuptools-39.2.0-7.el8.noarch
+  239  rpm -e --nodeps python-six-1.3.0-4.el7.noarch 
+
+  245  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  ```
+  
+依然会有错误提示
+
+检查当前更新源，将里面无关的都修改掉
+```shell
+ 
+  258  dnf repolist
+  259  cd /etc/dnf/
+  260  vi dnf.conf
+  261  cd /etc/yum.repos.d
+  262  ls
+  263  mv epel-testing-modular.repo epel-testing-modular.repo.bak
+  264  mv epel-testing.repo epel-testing.repo.bak
+  265  mv salt-latest.repo salt-latest.repo.bak
+  266  mv salt-py3-latest.repo salt-py3-latest.repo.bak
+  267  mv zabbix-non-supported.repo zabbix-non-supported.repo.bak
+  268  mv zabbix.repo zabbix.repo.bak
+       mv docker-ce.repo docker-ce.repo.bak
+  269  dnf upgrade
+  270  rpm -e --nodeps python-linux-procfs-0.4.11-4.el7.noarch
+  271  rpm -e --nodeps gdbm-1.10-8.el7.x86_64
+  272  dnf upgrade
+  273  dnf upgrade --best --allowerasing rpm
+  274  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  275  ls
+  276 
+  277  dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+  278  dnf -y reinstall kernel-core
+  279  dnf -y groupupdate "Core" "Minimal Install"
+  281  shutdown -r now
+  282  cat /etc/os-release 
+ 
+```
+
+至此，更新完成。
+
