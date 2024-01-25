@@ -113,3 +113,10 @@ New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentL
 
 ![d9e8c3a0ed54e93cbfb062e6f046c766.png](/images/tupian/K-03.jpg)
 
+
+##  防御措施
+
+在Windows服务器的操作系统中，已经有了一些针对服务账户的保护措施。比如使用服务组账户，这个账户是默认30天会自行变更的，不会像普通的账户那样，密码长期不变，而且整个的变更过程都是活动目录系统自行完成的，不需要人的参与。
+
+还有就是要求普通客户端进行AD验证的时候不允许RC4这样的加密算法，而统一要求AES这样的加密算法，比如不允许使用SMB1这样的协议来连接文件服务。
+

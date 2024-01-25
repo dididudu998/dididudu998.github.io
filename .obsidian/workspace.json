@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "931e6bc05285f17d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b3e4b72b42f45bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc32b79a78c75409",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/学习/2023-11-29-kerberoasting攻击.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44cac6014403b938",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca50ee0014efded2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa4ce8153c04f17a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6ca4bac62ea66044",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "601736ea1c84bf61",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5a23b9b5d98a42e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "190b098a4dd64d1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2657e1716138dc02",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/学习/2023-11-29-kerberoasting攻击.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "af6216c50fdb8eef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/学习/2023-11-29-kerberoasting攻击.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb848988e443aada",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "db80e408d6a0c465",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/学习/2023-11-29-kerberoasting攻击.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "fa4ce8153c04f17a",
+  "lastOpenFiles": [
+    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+    "_posts/学习/2022-12-09-golang跨平台编译的问题.md",
+    "_posts/学习/2023-11-29-kerberoasting攻击.md",
+    "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
+    "_posts/学习/2020-05-11-解码文件.md",
+    "_posts/学习/2020-01-28-重置mariadb的root密码.md",
+    "_posts/学习/2020-01-17-关于vmware的postgresql数据库.md",
+    "_posts/学习/2019-12-02-又忘的差不多了.md",
+    "_posts/学习/2019-07-11-切换了GitHub page.md"
+  ]
+}
