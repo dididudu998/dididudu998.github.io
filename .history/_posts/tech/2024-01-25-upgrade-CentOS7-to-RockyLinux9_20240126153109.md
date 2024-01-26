@@ -14,37 +14,12 @@ CentOS7 已经EOL，为了继续使用，准备升级到Rocky Linux。
 
 然后从Rocky Linux8 升级到 Rocky Linux9. 这个的EOL是2029. 但是这个不是官方支持的升级。官方建议直接重新安装新系统然后对数据和服务进行重新部署。
 
-下面是升级步骤，可能出现的冲突的包和你的不同。但是概括下，就是添加repo，更新，解决包冲突问题，然后继续即可。
+下面是升级步骤，可能和你的不同。但是概括下，就是添加repo，更新，解决包冲突问题，然后继续即可。
 
 要说明的是，这里选择了清华的CentOS的镜像，因为这个在国内维护的非常好，我也喜欢他们的这个TUNA协会。
 
 [TUNA Events](https://tuna.moe/events/)
 
-@2024-01-26 update, 删除有可能带来困扰的命令行。
-
-### 补充
-
-从Rocky Linux8升级到Rocky Linux9不是官方支持的行为。
-
-升级后，可能面临在进行“dnf update”的时候，出现大量的“conflicting requests"问题提示。这个问题可能由于来自CentOS7时候安装的部分软件。对于module的问题，可以这样进行解决。
-
-```shell
-Problem 1: conflicting requests
-  - nothing provides module(platform:el8) needed by module gimp:2.8:8030020210427153901:c307c522.x86_64 from @modulefailsafe
- Problem 2: conflicting requests
-  - nothing provides module(platform:el8) needed by module go-toolset:rhel8:8090020231117205530:da531176.x86_64 from @modulefailsafe
- Problem 3: conflicting requests
-  - nothing provides module(platform:el8) needed by module mariadb:10.3:8080020230920001707:fd72936b.x86_64 from @modulefailsafe
-```
-
-使用 module reset命令可以一次解决。
-
-```shell
-dnf module reset -y gimp go-toolset mariadb
-```
-再次尝试 update，发现问题提示已经没有了。
-
-## 完整更新过程
 
 ```shell
 # check current version
