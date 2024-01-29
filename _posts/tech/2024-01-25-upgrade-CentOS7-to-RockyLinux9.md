@@ -98,6 +98,8 @@ mv elasticsearch.repo elasticsearch.repo.bak
 mv kibana.repo kibana.repo.bak
 mv vmware-tools.repo vmware-tools.repo.bak
 mv filebeat.repo filebeat.repo.bak
+
+# just create a folder, and move the current repo files into the folder, then reinstall the centos 8 repo
  
 # continure install centos8
 dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
