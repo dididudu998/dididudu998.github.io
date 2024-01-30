@@ -110,32 +110,6 @@ minorver=8.5.2111
 sudo sed -e "s|^mirrorlist=|#mirrorlist=|g"          -e "s|^#baseurl=http://mirror.centos.org/\$contentdir/\$releasever|baseurl=https://mirrors.tuna.tsinghua.edu.cn/centos-vault/$minorver|g"          -i.bak          /etc/yum.repos.d/CentOS-*.repo
 dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
 
-#今天2024-01-30在升级一台bind服务器时，提示下面错误：
-```shell
-导入公钥成功
-运行事务检查
-错误：事务检查与依赖解决错误：
-(mariadb >= 3:10.3.27 if mariadb) 被 mariadb-connector-c-3.1.11-2.el8_3.x86_64 需要
-(mariadb-connector-c-config = 3.1.11-2.el8_3 if mariadb-connector-c-config) 被 mariadb-connector-c-3.1.11-2.el8_3.x86_64 需要
-rpmlib(RichDependencies) <= 4.12.0-1 被 mariadb-connector-c-3.1.11-2.el8_3.x86_64 需要
-(flatpak-selinux = 1.8.5-5.el8_5 if selinux-policy-targeted) 被 flatpak-1.8.5-5.el8_5.x86_64 需要
-rpmlib(RichDependencies) <= 4.12.0-1 被 flatpak-1.8.5-5.el8_5.x86_64 需要
-
-```
-
-此时，需要从package里面安装对应的包。
-```shell
-rpm -ivh --nodeps --force https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.5.2111/AppStream/x86_64/os/Packages/flatpak-1.8.5-5.el8_5.x86_64.rpm
-
-rpm -ivh --nodeps --force https://mirrors.tuna.tsinghua.edu.cn/centos-vault/8.5.2111/AppStream/x86_64/os/Packages/mariadb-connector-c-3.1.11-2.el8_3.x86_64.rpm
-```
-
-安装完毕后，再次
-dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
-
-会提示有冲突的包。然后继续下面的操作
-
-
 # there some conflict, remove it
 rpm -e --nodeps sysvinit-tools-2.88-14.dsf.el7.x86_64
 rpm -e --nodeps python36-rpmconf-1.1.7-1.el7.1.noarch
