@@ -150,7 +150,7 @@ dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
 rpm -e --nodeps python-ipaddress-1.0.16-2.el7.noarch
 # try again
 dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
-# pass, continue (yes for all)
+# pass, continue
 rpmconf -a
 
 # install kernel and kernel-core
