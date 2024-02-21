@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2024-01-30-windows下用ffmpeg.md",
+                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-01-30-windows下用ffmpeg.md",
+                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-01-30-windows下用ffmpeg.md",
+                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-01-30-windows下用ffmpeg.md"
+                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md"
               }
             }
           }
@@ -146,17 +146,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dc32b79a78c75409",
+  "active": "fa4ce8153c04f17a",
   "lastOpenFiles": [
-    "_posts/tech/2023-10-28-获取当前安装的java信息.md",
-    "_posts/tech/2024-01-30-windows下用ffmpeg.md",
-    "_posts/tech/2023-11-03-ELK和安全.md",
+    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
+    "_posts/tech/2018-11-13-Flask中使用celery执行异步操作.md",
+    "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
+    "_posts/life/2023-10-13-AdGuardHome.md",
+    "未命名.md",
+    "_posts/life/2019-01-11-预约了红米note7.md",
     "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+    "_posts/tech/2024-01-30-windows下用ffmpeg.md",
+    "_posts/tech/2023-10-28-获取当前安装的java信息.md",
+    "_posts/tech/2023-11-03-ELK和安全.md",
     "_posts/tech/2023-11-22-skilltree.md",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2018-11-15-我的git设定.md",
-    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
     "_posts/学习/2022-12-09-golang跨平台编译的问题.md",
     "_posts/学习/2023-11-29-kerberoasting攻击.md",
     "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
