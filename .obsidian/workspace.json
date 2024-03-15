@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
+                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
+                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
+                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md"
+                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md"
               }
             }
           }
@@ -146,20 +146,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fa4ce8153c04f17a",
+  "active": "dc32b79a78c75409",
   "lastOpenFiles": [
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
+    "_posts/tech/2024-03-05 MacOS不能安装app的解决.md",
+    "_posts/tech/2024-02-29-批量转化图片格式.md",
+    "_posts/tech/2024-01-30-windows下用ffmpeg.md",
+    "_posts/life/2019-01-11-预约了红米note7.md",
+    "_posts/一些记录/在vsphere中使用cloud-init定义虚拟机.md",
+    "_posts/一些记录/简单shell脚本.md",
+    "_posts/一些记录/系统压力测试.md",
+    "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
     "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
     "_posts/tech/2018-11-13-Flask中使用celery执行异步操作.md",
-    "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
     "_posts/life/2023-10-13-AdGuardHome.md",
     "未命名.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
     "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
-    "_posts/tech/2024-01-30-windows下用ffmpeg.md",
     "_posts/tech/2023-10-28-获取当前安装的java信息.md",
     "_posts/tech/2023-11-03-ELK和安全.md",
     "_posts/tech/2023-11-22-skilltree.md",
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2018-11-15-我的git设定.md",
     "_posts/学习/2022-12-09-golang跨平台编译的问题.md",
     "_posts/学习/2023-11-29-kerberoasting攻击.md",
@@ -167,7 +173,6 @@
     "_posts/学习/2020-05-11-解码文件.md",
     "_posts/学习/2020-01-28-重置mariadb的root密码.md",
     "_posts/学习/2020-01-17-关于vmware的postgresql数据库.md",
-    "_posts/学习/2019-12-02-又忘的差不多了.md",
-    "_posts/学习/2019-07-11-切换了GitHub page.md"
+    "_posts/学习/2019-12-02-又忘的差不多了.md"
   ]
 }
