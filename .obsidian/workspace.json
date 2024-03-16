@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
+                "file": "_posts/life/AV.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
+                "file": "_posts/life/AV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
+                "file": "_posts/life/AV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md"
+                "file": "_posts/life/AV.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "dc32b79a78c75409",
   "lastOpenFiles": [
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
+    "_posts/life/AV.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2024-03-05 MacOS不能安装app的解决.md",
     "_posts/tech/2024-02-29-批量转化图片格式.md",
     "_posts/tech/2024-01-30-windows下用ffmpeg.md",
@@ -172,7 +173,6 @@
     "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
     "_posts/学习/2020-05-11-解码文件.md",
     "_posts/学习/2020-01-28-重置mariadb的root密码.md",
-    "_posts/学习/2020-01-17-关于vmware的postgresql数据库.md",
-    "_posts/学习/2019-12-02-又忘的差不多了.md"
+    "_posts/学习/2020-01-17-关于vmware的postgresql数据库.md"
   ]
 }
