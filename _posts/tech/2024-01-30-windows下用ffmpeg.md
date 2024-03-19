@@ -52,6 +52,10 @@ C:\WINDOWS\system32>tldr ffmpeg
   - Convert MP4 video to VP9 codec. For the best quality, use a CRF value (recommended range 15-35) and -b:v MUST be 0:
     ffmpeg -i path/to/input_video.mp4 -codec:v libvpx-vp9 -crf 30 -b:v 0 -codec:a libopus -vbr on -threads number_of_threads path/to/output_video.webm
 
+ 直接从YOUTUBE链接转化为MP3的方法：
+
+  yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=A96X-maQVSs"
+
 5. 这里的对于时间截取的部分非常友好，提取一个专辑中的特别的歌曲非常有用。
 6. 然后windows中的话，直接自带的media player就可以满足基本的音频播放了。
 
