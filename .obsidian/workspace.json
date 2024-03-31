@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
+                "file": "_posts/life/2024-03-28-an operating system structuring concept.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "56dd3544dfdc76d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5a23b9b5d98a42e2",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
+                "file": "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
+                "file": "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md"
+                "file": "_posts/life/2024-03-28-implementing condition variables with semaphores.md"
               }
             }
           }
@@ -146,11 +160,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e1f7c32f2b6d70d8",
+  "active": "56dd3544dfdc76d7",
   "lastOpenFiles": [
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
-    "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
+    "未命名.canvas",
+    "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
+    "未命名.md",
+    "_posts/life/2024-03-28-an operating system structuring concept.md",
+    "_posts/life/2019-03-02-去私立医院.md",
+    "_posts/life/2019-01-11-预约了红米note7.md",
+    "_posts/life/2024-03-27-增长的分类.md",
+    "_posts/tech/2024-03-27-配置RDP的SSL证书.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2024-03-19-unable mount root fs and too many open files on ubuntu.md",
+    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+    "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
+    "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
+    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/life/2019-11-26-一些感悟.md",
     "_posts/tech/2023-11-22-skilltree.md",
     "_posts/tech/2024-03-11-\"please check gdb is codesigned\"的问题.md",
@@ -160,20 +185,8 @@
     "_posts/tech/2018-11-14-用root来执行计划任务.md",
     "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
     "_posts/tech/2018-11-13-Flask中使用celery执行异步操作.md",
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2024-01-30-windows下用ffmpeg.md",
-    "未命名.canvas",
     "_posts/life/AV.md",
-    "_posts/tech/2024-03-05 MacOS不能安装app的解决.md",
-    "_posts/tech/2024-02-29-批量转化图片格式.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
-    "_posts/一些记录/在vsphere中使用cloud-init定义虚拟机.md",
-    "_posts/一些记录/简单shell脚本.md",
-    "_posts/一些记录/系统压力测试.md",
-    "_posts/life/2024-02-21-由于计算数据类型错误导致的事故.md",
-    "_posts/life/2023-10-13-AdGuardHome.md",
-    "未命名.md",
-    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
-    "_posts/tech/2023-10-28-获取当前安装的java信息.md"
+    "_posts/tech/2024-03-05 MacOS不能安装app的解决.md"
   ]
 }
