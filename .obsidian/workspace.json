@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
-                "mode": "preview",
+                "file": "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
+                "file": "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
+                "file": "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md"
+                "file": "_posts/life/2024-04-14-幸运日，门卡失而复得.md"
               }
             }
           }
@@ -161,16 +161,18 @@
   },
   "active": "56dd3544dfdc76d7",
   "lastOpenFiles": [
-    "_posts/tech/2018-11-15-pyenv下的升级.md",
+    "_posts/life/2019-03-02-去私立医院.md",
+    "_posts/life/2019-01-11-预约了红米note7.md",
+    "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
+    "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
     "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
+    "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/tech/2018-11-14-用root来执行计划任务.md",
     "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
     "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
     "未命名.canvas",
     "未命名.md",
     "_posts/life/2024-03-28-an operating system structuring concept.md",
-    "_posts/life/2019-03-02-去私立医院.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
     "_posts/life/2024-03-27-增长的分类.md",
     "_posts/tech/2024-03-27-配置RDP的SSL证书.md",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
@@ -185,8 +187,6 @@
     "_posts/tech/2018-11-27-YunOS用户级别删除软件包.md",
     "_posts/tech/2018-11-15-我的git设定.md",
     "_posts/tech/2018-11-13-Flask中使用celery执行异步操作.md",
-    "_posts/tech/2024-01-30-windows下用ffmpeg.md",
-    "_posts/life/AV.md",
-    "_posts/tech/2024-03-05 MacOS不能安装app的解决.md"
+    "_posts/tech/2024-01-30-windows下用ffmpeg.md"
   ]
 }
