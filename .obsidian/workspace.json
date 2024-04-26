@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x70080005.md",
+                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
                 "mode": "source",
                 "source": true
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x70080005.md",
+                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x70080005.md",
+                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x70080005.md"
+                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md"
               }
             }
           }
@@ -174,7 +174,7 @@
   "active": "b8b88bbafebb447e",
   "lastOpenFiles": [
     "_posts/dailyrecord/2023-11-26-ntopng和防火墙.md",
-    "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x70080005.md",
+    "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
     "_posts/dailyrecord/2024-04-25-redhat8简单的更新脚本.md",
     "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
