@@ -34,3 +34,21 @@ find / -type f -name "*.txt" -exec sed -i 's/old/new/g' {} \;
 ```shell
 (find . -name "*.txt" |xargs tar -cvf my_txt.tar) && cp -f my_txt.tar /tmp/ && rm -f my_txt.tar
 ```
+
+# redhat 发送邮件
+
+```shell
+#!/bin/bash
+#mark @2024/04/21
+
+dnf install mutt -y
+update_log=$(dnf update -y)
+dnf update -y >g.txt
+ipaddress=$(hostname -I)
+datetime=$(date +"%Y-%m-%d %H:%M:%S")
+echo $ipaddress >>g.txt
+echo $datetime >>g.txt
+mutt -s "dnf update" myaccount@domain.coom <g.txt
+rm g.txt
+
+```
