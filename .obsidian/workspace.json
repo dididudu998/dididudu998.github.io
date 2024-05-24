@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
+                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
                 "mode": "source",
                 "source": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
+                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
+                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md"
+                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "f916d417c135f275",
   "lastOpenFiles": [
-    "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
+    "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
+    "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "未命名.canvas",
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/life/2024-03-28-an operating system structuring concept.md",
@@ -186,7 +187,6 @@
     "_posts/life/2024-03-27-增长的分类.md",
     "_posts/tech/2024-03-27-配置RDP的SSL证书.md",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
-    "_posts/tech/2024-03-19-unable mount root fs and too many open files on ubuntu.md",
-    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md"
+    "_posts/tech/2024-03-19-unable mount root fs and too many open files on ubuntu.md"
   ]
 }
