@@ -30,9 +30,33 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "34d7c4e7c4024291",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/dailyrecord/2020-11-02-13-04-record.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ac2fd0c1257d3f55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
+                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
+                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md"
+                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md"
               }
             }
           }
@@ -159,8 +183,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f916d417c135f275",
+  "active": "fa4ce8153c04f17a",
   "lastOpenFiles": [
+    "_posts/dailyrecord/2020-11-02-13-04-record.md",
+    "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+    "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
@@ -184,9 +211,6 @@
     "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/tech/2018-11-14-用root来执行计划任务.md",
     "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
-    "_posts/life/2024-03-28-implementing condition variables with semaphores.md",
-    "_posts/life/2024-03-27-增长的分类.md",
-    "_posts/tech/2024-03-27-配置RDP的SSL证书.md",
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md"
+    "_posts/life/2024-03-28-implementing condition variables with semaphores.md"
   ]
 }
