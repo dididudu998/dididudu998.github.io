@@ -49,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "fc8228844e0f0fa8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md"
+                "file": "_posts/tech/2024-07-01-doskey in windows 11.md"
               }
             }
           }
@@ -183,15 +195,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ac2fd0c1257d3f55",
+  "active": "fc8228844e0f0fa8",
   "lastOpenFiles": [
+    "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
+    "_posts/tech/2024-07-01-doskey in windows 11.md",
+    "_posts/tech/2019-02-01-年前最后一个工作日.md",
+    "_posts/tech/2019-01-18-vscode_python抽了.md",
+    "_posts/tech/2019-01-12-排除node_modules文件夹.md",
+    "_posts/tech/2018-12-02-今天一怒把Ecplise给删了.md",
+    "_posts/tech/2018-11-15-pyenv下的升级.md",
+    "_posts/tech/2018-11-15-我的git设定.md",
+    "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/dailyrecord/2020-11-02-13-04-record.md",
-    "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
-    "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
     "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
     "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "未命名.canvas",
@@ -204,13 +223,6 @@
     "_posts/dailyrecord/2021-03-09-20-59-算法.md",
     "_posts/一些记录/简单shell脚本.md",
     "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
-    "_posts/life/2019-03-02-去私立医院.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
-    "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
-    "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
-    "_posts/tech/2018-11-15-pyenv下的升级.md",
-    "_posts/tech/2018-11-14-用root来执行计划任务.md",
-    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
-    "_posts/life/2024-03-28-implementing condition variables with semaphores.md"
+    "_posts/life/2019-03-02-去私立医院.md"
   ]
 }
