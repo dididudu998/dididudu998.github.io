@@ -49,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "cbc26cd753d07abe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
+                "file": "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md"
+                "file": "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md"
               }
             }
           }
@@ -183,15 +195,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fa4ce8153c04f17a",
+  "active": "cbc26cd753d07abe",
   "lastOpenFiles": [
+    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
+    "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
+    "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/dailyrecord/2020-11-02-13-04-record.md",
     "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
-    "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
     "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "未命名.canvas",
@@ -210,7 +223,6 @@
     "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
     "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/tech/2018-11-14-用root来执行计划任务.md",
-    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
-    "_posts/life/2024-03-28-implementing condition variables with semaphores.md"
+    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md"
   ]
 }
