@@ -25,50 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
+                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
                 "mode": "source",
                 "source": true
-              }
-            }
-          },
-          {
-            "id": "34d7c4e7c4024291",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/dailyrecord/2020-11-02-13-04-record.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ac2fd0c1257d3f55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "fc8228844e0f0fa8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
-                "mode": "source",
-                "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
+                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
+                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md"
+                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md"
               }
             }
           }
@@ -195,22 +159,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fc8228844e0f0fa8",
+  "active": "f916d417c135f275",
   "lastOpenFiles": [
+    "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
+    "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
+    "_posts/dailyrecord/2020-11-02-13-04-record.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
+    "_posts/tech/2019-10-29-图像识别初学.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
+    "_posts/tech/2018-11-15-我的git设定.md",
     "_posts/tech/2024-07-01-doskey in windows 11.md",
     "_posts/tech/2019-02-01-年前最后一个工作日.md",
     "_posts/tech/2019-01-18-vscode_python抽了.md",
     "_posts/tech/2019-01-12-排除node_modules文件夹.md",
     "_posts/tech/2018-12-02-今天一怒把Ecplise给删了.md",
     "_posts/tech/2018-11-15-pyenv下的升级.md",
-    "_posts/tech/2018-11-15-我的git设定.md",
     "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
-    "_posts/dailyrecord/2020-11-02-13-04-record.md",
     "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
-    "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
     "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
     "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "未命名.canvas",
@@ -219,10 +187,6 @@
     "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
     "_posts/dailyrecord/2024-04-25-redhat8简单的更新脚本.md",
     "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
-    "_posts/dailyrecord/rsa_and_key_exchange_demo.md",
-    "_posts/dailyrecord/2021-03-09-20-59-算法.md",
-    "_posts/一些记录/简单shell脚本.md",
-    "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
-    "_posts/life/2019-03-02-去私立医院.md"
+    "_posts/dailyrecord/rsa_and_key_exchange_demo.md"
   ]
 }
