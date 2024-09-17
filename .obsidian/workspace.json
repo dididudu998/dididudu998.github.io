@@ -161,6 +161,7 @@
   },
   "active": "f916d417c135f275",
   "lastOpenFiles": [
+    "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
     "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "_posts/dailyrecord/2020-11-02-13-04-record.md",
@@ -186,7 +187,6 @@
     "_posts/dailyrecord/2023-11-26-ntopng和防火墙.md",
     "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
     "_posts/dailyrecord/2024-04-25-redhat8简单的更新脚本.md",
-    "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
-    "_posts/dailyrecord/rsa_and_key_exchange_demo.md"
+    "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md"
   ]
 }

@@ -15,7 +15,7 @@ description: 如果你也像我一样经常工作于Windows和Linux，那么这�
 ## 步骤
 
 1. 创建一个bat文件，这里我直接在C盘根目录创建了autoexec.bat文件，内容如下所示：
-```dos
+```text
 @echo off
 doskey gitblit=python C:\cursor-codes\在windows上设置gitblit的地址\set-gitblit-ip-in-hosts.py
 doskey adguard=C:\AdGuardHome\AdGuardHome.exe
@@ -32,7 +32,8 @@ doskey myip=c:\my_shell\get_public_ip_windows.cmd
 ...
 ```
 2. 在注册表中创建对应的启动项
-```regedit
+```text
+
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
@@ -41,8 +42,8 @@ Windows Registry Editor Version 5.00
 "EnableExtensions"=dword:00000001
 "PathCompletionChar"=dword:00000009
 "Autorun"="c:\\autoexec.bat"
-
 ```
+
 
 这样在系统重启后，这个autoexec.bat会被执行，执行后，上面doskey建立的alias就可以在命令行窗口中直接运行了。
 
