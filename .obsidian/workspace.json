@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
+                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
+                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md",
+                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-07-01-doskey in windows 11.md"
+                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md"
               }
             }
           }
@@ -197,10 +197,13 @@
   },
   "active": "cbc26cd753d07abe",
   "lastOpenFiles": [
-    "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
-    "_posts/tech/2024-07-01-doskey in windows 11.md",
-    "_posts/tech/2024-03-11-please check gdb is codesigned的问题.md",
     "_posts/tech/2024-03-11-%22please check gdb is codesigned%22的问题.md",
+    "_posts/tech/2024-03-11-please check gdb is codesigned的问题.md",
+    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+    "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
+    "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
+    "_posts/tech/2024-07-01-doskey in windows 11.md",
+    "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
     "Desktop.ini",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
@@ -208,7 +211,6 @@
     "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
-    "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
     "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
     "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
     "未命名.canvas",
@@ -222,8 +224,6 @@
     "_posts/一些记录/简单shell脚本.md",
     "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
     "_posts/life/2019-03-02-去私立医院.md",
-    "_posts/life/2019-01-11-预约了红米note7.md",
-    "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
-    "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md"
+    "_posts/life/2019-01-11-预约了红米note7.md"
   ]
 }

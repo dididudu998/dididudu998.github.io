@@ -32,7 +32,7 @@ doskey myip=c:\my_shell\get_public_ip_windows.cmd
 ...
 ```
 2. 在注册表中创建对应的启动项
-```text
+```ini
 
 Windows Registry Editor Version 5.00
 
@@ -42,6 +42,7 @@ Windows Registry Editor Version 5.00
 "EnableExtensions"=dword:00000001
 "PathCompletionChar"=dword:00000009
 "Autorun"="c:\\autoexec.bat"
+
 ```
 
 
