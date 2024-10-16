@@ -21,7 +21,7 @@ description: 如果你也像我一样经常工作于Windows和Linux，那么这�
 参考了这篇文章：[Hyper-V之二:Sandbox除错Windows 沙盒的各种 bug ,比如傻傻的复制本地网络导致无法联网,本来应该 - 掘金 (juejin.cn)](https://juejin.cn/post/7362057701792727076)
 
 然后创建一个mysandbox.wsb文件，内容如下：
-```wsb
+```json
 <Configuration>
   <MappedFolders>
     <MappedFolder>
