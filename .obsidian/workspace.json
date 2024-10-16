@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
-                "mode": "source",
+                "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 460.49999618530273
   },
   "right": {
     "id": "5a23b9b5d98a42e2",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
+                "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
+                "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md"
+                "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md"
               }
             }
           }
@@ -161,16 +161,18 @@
   },
   "active": "f916d417c135f275",
   "lastOpenFiles": [
+    "_posts/学习/2023-11-29-kerberoasting攻击.md",
+    "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
+    "_posts/tech/2024-07-01-doskey in windows 11.md",
+    "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
     "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
-    "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "_posts/dailyrecord/2020-11-02-13-04-record.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
     "_posts/tech/2019-10-29-图像识别初学.md",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2018-11-13-Ubuntu18的floopy问题.md",
     "_posts/tech/2018-11-15-我的git设定.md",
-    "_posts/tech/2024-07-01-doskey in windows 11.md",
     "_posts/tech/2019-02-01-年前最后一个工作日.md",
     "_posts/tech/2019-01-18-vscode_python抽了.md",
     "_posts/tech/2019-01-12-排除node_modules文件夹.md",
@@ -185,8 +187,6 @@
     "未命名.canvas",
     "_posts/life/2024-03-28-an operating system structuring concept.md",
     "_posts/dailyrecord/2023-11-26-ntopng和防火墙.md",
-    "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md",
-    "_posts/dailyrecord/2024-04-25-redhat8简单的更新脚本.md",
-    "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md"
+    "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md"
   ]
 }
