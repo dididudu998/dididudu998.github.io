@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
+                "file": "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
                 "mode": "source",
                 "source": true
               }
@@ -62,13 +62,13 @@
               "type": "markdown",
               "state": {
                 "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+                "file": "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
+                "file": "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md"
+                "file": "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md"
               }
             }
           }
@@ -195,18 +195,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cbc26cd753d07abe",
+  "active": "ac2fd0c1257d3f55",
   "lastOpenFiles": [
+    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
+    "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
+    "未命名.md",
+    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
     "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "_posts/tech/2024-03-11-%22please check gdb is codesigned%22的问题.md",
     "_posts/tech/2024-03-11-please check gdb is codesigned的问题.md",
-    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
     "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
     "_posts/tech/2024-07-01-doskey in windows 11.md",
     "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
     "Desktop.ini",
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/dailyrecord/2020-11-02-13-04-record.md",
     "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
@@ -222,8 +224,6 @@
     "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
     "_posts/dailyrecord/rsa_and_key_exchange_demo.md",
     "_posts/dailyrecord/2021-03-09-20-59-算法.md",
-    "_posts/一些记录/简单shell脚本.md",
-    "_posts/life/2024-04-14-幸运日，门卡失而复得.md",
-    "_posts/life/2019-03-02-去私立医院.md"
+    "_posts/一些记录/简单shell脚本.md"
   ]
 }
