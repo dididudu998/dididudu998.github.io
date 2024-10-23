@@ -195,8 +195,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ac2fd0c1257d3f55",
+  "active": "fa4ce8153c04f17a",
   "lastOpenFiles": [
+    "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
     "未命名.md",
@@ -223,7 +224,6 @@
     "_posts/dailyrecord/2024-04-25-redhat8简单的更新脚本.md",
     "_posts/dailyrecord/2023-11-30-升级CentOS7到RockyLinux8.md",
     "_posts/dailyrecord/rsa_and_key_exchange_demo.md",
-    "_posts/dailyrecord/2021-03-09-20-59-算法.md",
-    "_posts/一些记录/简单shell脚本.md"
+    "_posts/dailyrecord/2021-03-09-20-59-算法.md"
   ]
 }
