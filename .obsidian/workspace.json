@@ -13,26 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
+                "file": "_posts/学习/2025-02-18-对话检索本地内容.md",
                 "mode": "source",
                 "source": true
-              }
-            }
-          },
-          {
-            "id": "f916d417c135f275",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
-                "mode": "source",
-                "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2025-02-18-对话检索本地内容"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -51,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -67,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -75,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -106,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "2024-10-16-windows sandbox使用主机的代理服务器 的反向链接列表"
             }
           },
           {
@@ -118,7 +116,9 @@
                 "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "2024-10-16-windows sandbox使用主机的代理服务器 的出链列表"
             }
           },
           {
@@ -129,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -139,7 +141,9 @@
               "type": "outline",
               "state": {
                 "file": "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "2024-10-16-windows sandbox使用主机的代理服务器 的大纲"
             }
           }
         ]
@@ -159,10 +163,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f916d417c135f275",
+  "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
-    "_posts/学习/2023-11-29-kerberoasting攻击.md",
+    "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
+    "_posts/学习/2020-02-11-trojan的部署和使用.md",
+    "_posts/学习/2019-12-12-怎么样解码dump文件.md",
+    "_posts/学习/2025-02-18-对话检索本地内容.md",
+    "Clippings/首页 · IT迷途小书童.md",
     "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
+    "Clippings",
+    "_posts/学习/2023-11-29-kerberoasting攻击.md",
     "_posts/tech/2024-07-01-doskey in windows 11.md",
     "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
@@ -182,11 +192,6 @@
     "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
     "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
-    "_posts/tech/2024-05-14-RedHat Satellite Content-views自动发布.md",
-    "_posts/一些记录/2024-05-02-最近的一些杂事合并记录.md",
-    "未命名.canvas",
-    "_posts/life/2024-03-28-an operating system structuring concept.md",
-    "_posts/dailyrecord/2023-11-26-ntopng和防火墙.md",
-    "_posts/dailyrecord/2024-03-22-让R可以正常显示中文.md"
+    "未命名.canvas"
   ]
 }
