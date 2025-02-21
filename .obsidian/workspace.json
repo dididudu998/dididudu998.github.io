@@ -165,6 +165,9 @@
   },
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
+    "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
+    "_posts/tech/2024-03-11-please check gdb is codesigned的问题.md",
+    "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
     "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
     "_posts/学习/2020-02-11-trojan的部署和使用.md",
     "_posts/学习/2019-12-12-怎么样解码dump文件.md",
@@ -189,9 +192,6 @@
     "_posts/tech/2018-12-02-今天一怒把Ecplise给删了.md",
     "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
-    "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
-    "_posts/dailyrecord/2020-10-21-整理下自己的常用alias任务.md",
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "未命名.canvas"
   ]
 }
