@@ -165,13 +165,15 @@
   },
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
+    "_posts/dailyrecord/rsa_and_key_exchange_demo.md",
+    "_posts/life/AV.md",
+    "_posts/学习/2025-02-18-对话检索本地内容.md",
     "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
     "_posts/tech/2024-03-11-please check gdb is codesigned的问题.md",
     "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
     "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
     "_posts/学习/2020-02-11-trojan的部署和使用.md",
     "_posts/学习/2019-12-12-怎么样解码dump文件.md",
-    "_posts/学习/2025-02-18-对话检索本地内容.md",
     "Clippings/首页 · IT迷途小书童.md",
     "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
     "Clippings",
@@ -190,8 +192,6 @@
     "_posts/tech/2019-01-18-vscode_python抽了.md",
     "_posts/tech/2019-01-12-排除node_modules文件夹.md",
     "_posts/tech/2018-12-02-今天一怒把Ecplise给删了.md",
-    "_posts/tech/2018-11-15-pyenv下的升级.md",
-    "_posts/dailyrecord/2024-06-17-mailx使用外部smtp服务器.md",
     "未命名.canvas"
   ]
 }
