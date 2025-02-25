@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/学习/2025-02-25-huggingface上面SD模型到safetensors的转化.md",
+                "file": "_posts/学习/2025-02-18 对话检索本地内容.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-02-25-huggingface上面SD模型到safetensors的转化"
+              "title": "2025-02-18 对话检索本地内容"
             }
           }
         ]
@@ -166,8 +166,8 @@
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
     "_posts/学习/2025-02-03-用deepseek和NLP模型做了个本地知识库问答.md",
-    "_posts/学习/2025-02-18 对话检索本地内容.md",
     "_posts/学习/2025-02-25-huggingface上面SD模型到safetensors的转化.md",
+    "_posts/学习/2025-02-18 对话检索本地内容.md",
     "_posts/学习/2019-12-02-又忘的差不多了.md",
     "_posts/学习/2025-01-10-一句话shell更新windows主机.md",
     "_posts/学习/2019-07-11-切换了GitHub page.md",
