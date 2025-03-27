@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2025-03-26-定时更新dns记录.md",
-                "mode": "preview",
+                "file": "_posts/life/2025-03-27-替换openvpen为wireguard.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-03-26-定时更新dns记录"
+              "title": "2025-03-27-替换openvpen为wireguard"
             }
           }
         ]
@@ -165,8 +165,10 @@
   },
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
+    "_posts/life/2019-03-02-去私立医院.md",
+    "_posts/life/2025-03-27-替换openvpen为wireguard.md",
     "_posts/dailyrecord/2025-03-26-定时更新dns记录.md",
+    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/看书/2025-02-26-电子书epub转有声书.md",
     "_posts/学习/2020-02-11-trojan的部署和使用.md",
     "_posts/看书/2023-11-28-做事的过程.md",
@@ -190,8 +192,6 @@
     "Clippings",
     "_posts/学习/2023-11-29-kerberoasting攻击.md",
     "_posts/tech/2024-07-01-doskey in windows 11.md",
-    "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
-    "_posts/tech/2024-07-17-RDP经常复制粘贴不能的问题.md",
     "未命名.canvas"
   ]
 }
