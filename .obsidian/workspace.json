@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/life/2025-03-27-替换openvpen为wireguard.md",
+                "file": "_posts/tech/2025-04-30-一个修改系统默认字体的工具.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-03-27-替换openvpen为wireguard"
+              "title": "2025-04-30-一个修改系统默认字体的工具"
             }
           }
         ]
@@ -165,8 +165,10 @@
   },
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
-    "_posts/life/2019-03-02-去私立医院.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "_posts/tech/2025-04-30-一个修改系统默认字体的工具.md",
     "_posts/life/2025-03-27-替换openvpen为wireguard.md",
+    "_posts/life/2019-03-02-去私立医院.md",
     "_posts/dailyrecord/2025-03-26-定时更新dns记录.md",
     "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
     "_posts/看书/2025-02-26-电子书epub转有声书.md",
@@ -190,8 +192,6 @@
     "Clippings/首页 · IT迷途小书童.md",
     "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
     "Clippings",
-    "_posts/学习/2023-11-29-kerberoasting攻击.md",
-    "_posts/tech/2024-07-01-doskey in windows 11.md",
     "未命名.canvas"
   ]
 }
