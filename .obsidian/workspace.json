@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "_posts/tech/2025-04-30-一个修改系统默认字体的工具.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -165,6 +165,7 @@
   },
   "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
+    "images/tupian/Noto_Sans_SC.zip",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2025-04-30-一个修改系统默认字体的工具.md",
     "_posts/life/2025-03-27-替换openvpen为wireguard.md",
@@ -190,7 +191,6 @@
     "_posts/学习/2020-05-12-如何判断是否使用了虚拟机.md",
     "_posts/学习/2019-12-12-怎么样解码dump文件.md",
     "Clippings/首页 · IT迷途小书童.md",
-    "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
     "Clippings",
     "未命名.canvas"
   ]
