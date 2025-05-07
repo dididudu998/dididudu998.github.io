@@ -2,7 +2,7 @@
 layout: post
 title: 使用opencore legacy升级MacBook的操作系统
 category: tech
-tags: 
+tags: [macbook,opencore,upgrade]
 description:
 ---
 现在用的Macbook Pro是2015 early的版本，13寸银白，用到现在也有9年了，期间换了一次电池，换了一次屏幕，最后一次换电池，苹果店还把A面也给换了，现在整体的样子还是很新的感觉。
