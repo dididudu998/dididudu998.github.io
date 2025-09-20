@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2025-07-28-html页面打包.md",
+                "file": "_posts/tech/2025-08-30-下载twitter的内容.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-07-28-html页面打包"
+              "title": "2025-08-30-下载twitter的内容"
             }
           }
         ],
@@ -184,6 +184,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -194,8 +195,10 @@
   },
   "active": "c28ab20830273874",
   "lastOpenFiles": [
-    "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "_posts/tech/2025-08-30-下载twitter的内容.md",
     "_posts/tech/2025-07-28-html页面打包.md",
+    "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
     "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
     "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
@@ -206,7 +209,6 @@
     "log/all.log",
     "log/error.log",
     "log",
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/dailyrecord/2025-04-20-使用opencore legacy升级Macbook系统.md",
     "_posts/dailyrecord/2025-03-26-定时更新dns记录.md",
     "_posts/一些记录/在vsphere中使用cloud-init定义虚拟机.md",
@@ -224,7 +226,6 @@
     "_posts/学习/2025-01-10-一句话shell更新windows主机.md",
     "_posts/学习/2019-07-11-切换了GitHub page.md",
     "_posts/学习/2025-01-01-add-security-members-into-ad-group-api.md",
-    "_posts/dailyrecord/rsa_and_key_exchange_demo.md",
     "Clippings",
     "未命名.canvas"
   ]
