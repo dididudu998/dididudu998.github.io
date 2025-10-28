@@ -34,23 +34,9 @@
               "icon": "lucide-file",
               "title": "2025-06-26-打包golang的web服务器为独立可执行文件"
             }
-          },
-          {
-            "id": "c28ab20830273874",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2025-08-30-下载twitter的内容.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2025-08-30-下载twitter的内容"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pyenv",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +89,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,10 +180,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c28ab20830273874",
+  "active": "783c5f9c78ecc525",
   "lastOpenFiles": [
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/tech/2025-08-30-下载twitter的内容.md",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2025-07-28-html页面打包.md",
     "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
     "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
@@ -225,7 +213,6 @@
     "_posts/学习/2019-12-02-又忘的差不多了.md",
     "_posts/学习/2025-01-10-一句话shell更新windows主机.md",
     "_posts/学习/2019-07-11-切换了GitHub page.md",
-    "_posts/学习/2025-01-01-add-security-members-into-ad-group-api.md",
     "Clippings",
     "未命名.canvas"
   ]
