@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
+                "file": "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2018-11-12-不伤害数据怎么刷回MIUI"
+            }
+          },
+          {
+            "id": "764fa2c84ae5304c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-10-28-ssh隧道的一些应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-26-打包golang的web服务器为独立可执行文件"
+              "title": "2025-10-28-ssh隧道的一些应用"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -68,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pyenv",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +103,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,13 +193,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "783c5f9c78ecc525",
+  "active": "764fa2c84ae5304c",
   "lastOpenFiles": [
+    "images/tupian/ssh-tunnel.png",
+    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
+    "2025-10-28-ssh隧道的一些应用.md",
+    "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
     "_posts/tech/2018-11-15-pyenv下的升级.md",
     "_posts/tech/2025-08-30-下载twitter的内容.md",
-    "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2025-07-28-html页面打包.md",
-    "_posts/tech/2025-06-26-打包golang的web服务器为独立可执行文件.md",
     "_posts/tech/2024-04-11-.NetFrameWork3.5安装问题0x800F0954.md",
     "_posts/tech/2024-04-14-openconnect多重认证的问题.md",
     "_posts/tech/2024-05-24-CentOS7 to RedHat8.md",
@@ -211,8 +226,6 @@
     "_posts/学习/2025-02-03-用deepseek和NLP模型做了个本地知识库问答.md",
     "_posts/学习/2025-02-25-huggingface上面SD模型到safetensors的转化.md",
     "_posts/学习/2019-12-02-又忘的差不多了.md",
-    "_posts/学习/2025-01-10-一句话shell更新windows主机.md",
-    "_posts/学习/2019-07-11-切换了GitHub page.md",
     "Clippings",
     "未命名.canvas"
   ]
