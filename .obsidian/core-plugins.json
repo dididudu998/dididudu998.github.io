@@ -26,7 +26,11 @@
   "workspaces": false,
   "file-recovery": true,
   "publish": false,
+<<<<<<< HEAD
   "sync": false,
+=======
+  "sync": true,
+>>>>>>> 24f43e807177684431e68a517bad2adf00ed65b0
   "webviewer": false,
   "footnotes": false,
   "bases": true
