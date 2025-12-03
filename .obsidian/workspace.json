@@ -13,112 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/dailyrecord/2024-04-26-Windows集群创建角色时code0x80070005.md",
+                "file": "_posts/学习/2025-12-03-网络层面的混沌工程.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2024-04-26-Windows集群创建角色时code0x80070005"
-            }
-          },
-          {
-            "id": "f916d417c135f275",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/dailyrecord/2024-05-26-检查linux中已安装的包.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2024-05-26-检查linux中已安装的包"
-            }
-          },
-          {
-            "id": "34d7c4e7c4024291",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/dailyrecord/2020-11-02-13-04-record.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2020-11-02-13-04-record"
-            }
-          },
-          {
-            "id": "ac2fd0c1257d3f55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试"
-            }
-          },
-          {
-            "id": "990a4994941ee156",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.14"
-            }
-          },
-          {
-            "id": "6b78a00d6cfba9d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试"
-            }
-          },
-          {
-            "id": "20edd6f8c6de9474",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2025-11-22-ntfy发送通知到手机.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-22-ntfy发送通知到手机"
-            }
-          },
-          {
-            "id": "cbc26cd753d07abe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-01-25-upgrade-CentOS7-to-RockyLinux9"
+              "title": "2025-12-03-网络层面的混沌工程"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -261,12 +164,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "20edd6f8c6de9474",
+  "active": "e1f7c32f2b6d70d8",
   "lastOpenFiles": [
+    "_posts/学习/2019-12-12-怎么样解码dump文件.md",
+    "_posts/学习/2019-12-02-又忘的差不多了.md",
+    "_posts/学习/2025-12-03-网络层面的混沌工程.md",
+    "_posts/学习/2025-02-25-huggingface上面SD模型到safetensors的转化.md",
+    "_posts/学习/2019-07-11-切换了GitHub page.md",
+    "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
+    "_posts/tech/2024-07-01-doskey in windows 11.md",
+    "_posts/tech/2025-11-22-ntfy发送通知到手机.md",
     "js.json",
     "images/tupian/ssh-tunnel.png",
     "_posts/看书/2025-02-26-电子书epub转有声书.md",
-    "_posts/学习/2025-02-25-huggingface上面SD模型到safetensors的转化.md",
     "_posts/学习/2025-02-18 对话检索本地内容.md",
     "_posts/学习/2025-02-03-用deepseek和NLP模型做了个本地知识库问答.md",
     "_posts/学习/2025-01-10-一句话shell更新windows主机.md",
@@ -280,16 +190,10 @@
     "_posts/life/2025-03-27-替换openvpen为wireguard.md",
     "_posts/dailyrecord/2025-04-20-使用opencore legacy升级Macbook系统.md",
     "_posts/dailyrecord/2025-03-26-定时更新dns记录.md",
-    "_posts/tech/2024-12-19-以一种访问权限不允许的方式做了一个访问套接字的尝试.md",
-    "_posts/tech/2025-11-22-ntfy发送通知到手机.md",
     "_posts/tech/2018-11-15-我的git设定.md",
     "_posts/tech/2018-11-12-不伤害数据怎么刷回MIUI.md",
     "_posts/tech/2019-08-12-docker openvpn 跨网实践.md",
     "_posts/dailyrecord/2024-10-23-Linux中的虚拟网卡.md",
-    "_posts/学习/2024-10-16-windows sandbox使用主机的代理服务器.md",
-    "_posts/dailyrecord/2020-06-08-利用dns查询获取我的公网地址.md",
-    "_posts/tech/2024-01-25-upgrade-CentOS7-to-RockyLinux9.md",
-    "_posts/dailyrecord/2024-09-17-自动拨入cisco anyconnect.md",
     "Desktop.ini",
     "未命名.canvas"
   ]
