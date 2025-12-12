@@ -8,4 +8,5 @@ Gemfile.lock
 _posts/.MWebMetaData/
 .jekyll-metadata
 start
-.obsidian/workspace.json
+workspace.json
+**/workspace.json
