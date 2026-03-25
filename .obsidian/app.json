@@ -1,3 +1,4 @@
 {
-  "attachmentFolderPath": "images/tupian"
+  "attachmentFolderPath": "images/tupian",
+  "promptDelete": false
 }
