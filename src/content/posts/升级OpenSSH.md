@@ -1,0 +1,71 @@
+---
+title: "升级OpenSSH"
+published: 2019-06-25
+draft: false
+description: "如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一看"
+category: "tech"
+tags: ["Linux"]
+---
+
+# 问题
+
+扫描器提示OpenSSH的版本太低，存在多个安全漏洞，而且漏洞级别是high。
+
+所以就开始升级OpenSSH。
+
+为此还专门先升级了OpenSSL组件。
+
+# 过程
+
+- 首先CentOS的库里面没有提供最新的OpenSSH的包，也就是不能从yum直接升级，而且也米有对应的可以下载的RPM包
+
+- 只好从源码安装
+
+- 从这里下载   wget https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.0p1.tar.gz
+
+- 安装编译工具，以及依赖
+
+  ```bash
+  yum groupinstall "Development Tools" -y
+  yum install openssl-devel zlib-devel -y
+  ```
+
+- 解压openssh文件
+
+  ```bash
+  tar -zvxf openssh-8.0p1.tar.gz
+  cd openssh0-8.0p1
+  ./configure --with-ssl-dir=/usr/local/lib64
+  make && make install
+  ```
+
+- 新的ssh安装到了/usr/local/bin/ssh。将原来的/usr/bin/ssh 移动到/tmp，然后建立连接
+
+  ```bash
+  ln -s /usr/local/bin/ssh /usr/bin/ssh
+  ```
+
+  
+
+- (2019-07-24补充)修改SSHD服务
+
+  - vi /etc/init.d/sshd
+  - SSHD=/usr/sbin/sshd —> SSHD=/usr/local/sbin/sshd
+  - KEYGEN=/usr/sbin/ssh-keygen —>KEYGEN=/usr/local/bin/ssh-keygen
+
+- 禁用CipherBlockChaining（CBC）和weak MAC Algorithms
+
+  - 在/etc/ssh/sshd_config中添加下面的两行
+
+  ```bash
+  Ciphers aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128
+  MACs hmac-sha1,umac-64@openssh.com,hmac-ripemd160
+  ```
+
+- 重启SSHD服务
+
+  - service sshd restart
+
+- 测试 ssh -V(有时候发现还是旧的版本，只要重启下就好了)
+
+- 再次用扫描器Nessus扫描后，发现OpenSSH的漏洞已经不再报了

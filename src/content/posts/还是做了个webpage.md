@@ -1,0 +1,18 @@
+---
+title: "还是做了个webpage"
+published: 2018-12-26
+draft: false
+description: "如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一看"
+category: "tech"
+tags: ["Linux"]
+---
+
+# 接上篇，管理infoblox
+
+今天还是做了一个webpage用来管理infoblox了。
+
+主要是在这个webpage做了DNS的变更后，我可以收到邮件提醒。
+
+这样我就可以对数据进行回溯。
+
+![img](/images/tupian/infobloxoption.jpg)

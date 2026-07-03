@@ -1,0 +1,22 @@
+---
+title: "关于DHCP的监控"
+published: 2020-05-15
+draft: false
+category: "学习"
+tags: ["blog", "学习"]
+---
+
+# DHCP监控
+
+废话不多说。
+
+早就配置过这个了，但是今天发生问题，长时间没访问给忘记了。记录下。
+
+直接上[glass-isc-dhcp](https://github.com/Akkadius/glass-isc-dhcp)
+
+使用的访问端口是3000端口，而不是8080的端口。这个要明白。
+
+整个的实现也比较简单。
+
+直接放在dhcp服务器上面即可。
+

@@ -1,0 +1,168 @@
+---
+title: "跨vCenter 移动VM报“DataCenterMismatchArgument to Object”的问题"
+published: 2020-12-17
+draft: false
+category: "tech"
+tags: ["vcenter", "move-vm", "vmware"]
+---
+
+# 跨vCenter移动vm出现“datacentermismatchargument to object"的问题
+
+应该是前天做虚拟机迁移的时候用自己以前的迁移脚本，出现了这个问题。在想，是不是因为不同vCenter的版本导致的。源vCenter是6.7，目标vCenter是7.0.感觉如果要是这个原因，那就麻烦了。
+
+又想着升级6.7的vCenter到7.0.但是问题又来了，6.7的vCenter上面乱七八糟，用VMware的迁移升级工具，报超时。也就是没法用工具迁移。
+
+昨天想了这个方案：
+1. 备份6.7的数据库
+2. 建一个新的6.7的vCenter
+3. 还原数据库到这个新的vCenter
+4. 迁移这个新的vCenter到7.0
+5. 断开连接到旧的6.7的vCenter的esxi主机
+6. 在新的vCenter 7上面连接这些esxi主机
+
+感觉是可以实现，但是这个月没时间来做这个操作了。明年1月再说。
+
+回到这个datacentermismatchargument的问题。
+
+网上搜了一下，各种说法都有，但是看不出有什么借鉴的，因为配置了没用。
+
+到了昨天下午，试着clone了一个VM，再用脚本迁移，成了。。。。。
+
+调查了一下问题，看到成了的VM的数据是存在标准的DATASTORE中的，而不成的是存在存储数据集群的。
+
+我当时为了管理的方便，做了几个存储数据集群。
+
+将移动报错的VM迁移到标准的数据存储后，再用脚本进行移动，成功。
+
+接着尝试了将另外存在标准数据存储的vm移动到存储数据集群中，再进行移动，也是成功的。莫名了。。。。。
+
+到底是什么原因导致的报错啊？
+
+不是因为vCenter的版本的原因。也不全是VM存储的方式的原因。也不是VM的版本的原因。。。
+
+但是可以说明的是，我只要做了几次VM在当前vCenter的存储迁移后，就可以进行跨vCenter的迁移。
+
+现在静不下来看vmware的api文档，权且这样吧。无非就是多迁移几次存储。
+
+---2020-12-17 11:29 AM 补充
+
+看了下API文档，有这样的说法：
+
+```
+Managed Object Reference
+To interact or modify an entity such as a virtual machine or ESX(i) host, a client application like the vSphere Client or one of the vSphere SDK’s needs to be able to reference a Managed Object from the server side, as you can not access the server side objects directly. This reference encapsulates the properties and operations of the Managed Object and it makes available to the client application. This reference is always guaranteed to be unique and persistent for the lifetime of the object within vSphere.
+```
+代码中包含“datacentermismatchArgument”的部分：
+
+```go
+type DatacenterMismatchArgument struct {
+	DynamicData
+
+	Entity          ManagedObjectReference  `xml:"entity"`
+	InputDatacenter *ManagedObjectReference `xml:"inputDatacenter,omitempty"`
+}
+```
+可以看到其中有这么两个参数，其中收集entity和inputdatacenter，omitempty的信息。
+
+其中inputdatacenter这个值可以为空。因为
+
+> a field with a tag including the "omitempty" option is omitted
+  if the field value is empty. The empty values are false, 0, any
+  nil pointer or interface value, and any array, slice, map, or
+  string of length zero.
+
+而查看代码又有：
+```go
+type DynamicData struct {
+}
+
+type ManagedObjectReference struct {
+	Type  string `xml:"type,attr"`
+	Value string `xml:",chardata"`
+}
+```
+
+说明 ManagedObjectReference是一个类似dict的结构，包括类型和值。
+
+move-vm的工作描述见下，跨vCenter的情况下，only datastores are supported as storage destinations.
+
+```xml
+alertSet      : @{alert=System.Management.Automation.PSObject[]}
+description   : {@{Text=This cmdlet moves a virtual machine to the location that is specified by the Destination or the Datastore 
+                parameters. The destination must be a folder, host, cluster, or a resource pool. You can move a virtual machine to 
+                a DRS cluster. Moving a virtual machine to the top level of a non-DRS cluster is only possible if the virtual 
+                machine is in a resource pool in that cluster. If the virtual machine is outside the non-DRS cluster, you need to 
+                specify a virtual machine host in that cluster as destination. When moving virtual machines that are powered on, 
+                vMotion is used. You can move storage and compute resources simultaneously. You can move virtual machines between 
+                vCenter Server systems of vSphere version 6.0 and later. To specify a server different from the default one, use 
+                the Server parameter. When you move a virtual machine from one vCenter Server system to another, only datastores 
+                are supported as storage destinations.}}
+syntax        : @{syntaxItem=System.Management.Automation.PSObject[]}
+parameters    : @{parameter=System.Management.Automation.PSObject[]}
+relatedLinks  : @{navigationLink=System.Management.Automation.PSObject[]}
+inputTypes    : 
+details       : @{verb=Move; name=Move-VM; description=System.Management.Automation.PSObject[]; noun=VM}
+examples      : @{example=System.Management.Automation.PSObject[]}
+returnValues  : @{returnValue=@{type=@{name=Zero or more relocated VirtualMachine objects}; 
+                description=System.Management.Automation.PSObject[]}}
+xmlns:maml    : http://schemas.microsoft.com/maml/2004/10
+xmlns:command : http://schemas.microsoft.com/maml/dev/command/2004/10
+xmlns:dev     : http://schemas.microsoft.com/maml/dev/2004/10
+xmlns:MSHelp  : http://msdn.microsoft.com/mshelp
+Name          : Move-VM
+Category      : Cmdlet
+Synopsis      : This cmdlet moves virtual machines to another location.
+Component     : 
+Role          : 
+Functionality : 
+PSSnapIn      : 
+ModuleName    : VMware.VimAutomation.Core
+```
+
+错误输出信息：
+ > 12/17/2020 10:45:40 AM Move-VM  Could not obtain the result of   task                                                  | '/VIServer=vsphere.local\ls3686@10.214.16.218:443/Task=Task-task-4730/'. Task name is                                | 'RelocateVM_Task'. The following error occured: Unexpected error occured. Cannot convert type                        | 'DatacenterMismatchArgument' to 'Object'. 
+
+
+根据错误信息，其中的“RelocateVM_Task', 在powershell的检查有下面的输出：
+
+1. $v=get-vm vm1
+2. $v.ExtensionData.RelocateVM_Task
+   > OverloadDefinitions
+VMware.Vim.ManagedObjectReference RelocateVM_Task(VMware.Vim.VirtualMachineRelocateSpec spec,
+System.Nullable[VMware.Vim.VirtualMachineMovePriority] priority)
+3. 这其中有这样的参数“VMware.Vim.VirtualMachineRelocateSpec”
+
+## 研究这个参数
+
+继续powershell
+
+```powershell
+$spec=New-Object VMware.Vim.VirtualMachineRelocateSpec
+$spec
+
+Service      : 
+Folder       : 
+Datastore    : 
+DiskMoveType : 
+Pool         : 
+Host         : 
+Disk         : 
+Transform    : 
+DeviceChange : 
+Profile      : 
+CryptoSpec   : 
+LinkedView   : 
+
+```
+
+也就是执行relocateVM这个任务需要的参数就是上面的情况。
+
+这里的每一个类型，都可以用$spec.DataStore这样类似的方式获得说明和参数。
+
+可以说，move-vm只要上面的参数值是正确的就可以执行。只要vCenter的版本在6.0以上就可以，不在于vCenter之间的版本的差别。
+
+# 综述
+
+<b>总结</b>：最终能够移动的原因还是在于datastore的问题。
+
+

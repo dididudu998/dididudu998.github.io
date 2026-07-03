@@ -1,0 +1,24 @@
+---
+title: "检查linux中已安装的包"
+published: 2024-05-26
+draft: false
+description: "如果你也像我一样经常工作于Windows和Linux，那么这篇文章值得一"
+category: "tech"
+tags: ["Linux"]
+---
+
+## Ubuntu
+```shell
+sudo apt list --installed
+sudo apt list --installed |grep chrome
+dpkg --get-selections
+```
+
+## RedHat
+```shell
+rpm -qa
+rpm -qa |grep chrome
+yum list installed
+dnf list installed
+```
+

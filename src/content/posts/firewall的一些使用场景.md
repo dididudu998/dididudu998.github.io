@@ -1,0 +1,18 @@
+---
+title: "firewalld的一些使用场景"
+published: 2020-09-10
+draft: false
+category: "tech"
+tags: ["Linux", "firewall", "security"]
+---
+
+## firewalld的一些使用场景（长期更新）
+
+1. 开了个数据展现网站，只给自己看，自己的ip是固定的，可以这么做
+```bash
+firewall-cmd --new-zone=mark --permanent
+firewall-cmd --reload
+firewall-cmd --zone=mark --add-source=192.168.100.23/32 --permanent
+firewall-cmd --zone=mark --add-port=5678/tcp --permanent
+```
+检查： firewall-cmd --zone=mark --list-all

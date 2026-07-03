@@ -1,0 +1,75 @@
+---
+title: "整理了下自己常用的alias任务"
+published: 2020-10-21
+draft: false
+description: "像我一样经常工作于Windows和Linux，那么这篇文章值得一看"
+category: "daily"
+tags: ["linux"]
+---
+
+# 自己的一些快捷任务整理
+
+下面都是执行的shell，在crontab -e里面写定时语句即可执行，我一般写成类似这样的
+
+-  00 */4 * * * cd /Users/ls3686  && sh sync-my-project.sh
+
+- 同步目录
+    ```shell
+echo "starting rsync to github-我自己的项目"
+rsync -arvh --progress --exclude="*.git" --exclude="node_modules" --exclude="src" --      exclude="*.jpg" --exclude="*.gif" /Users/ls3686/workspace/learn/自己的项目/* "/Users/ls3686/github-我自己的项目"
+echo "rsync to github-我自己的项目 完成!"
+
+    ```
+- 定时更新到我的gitlab
+```bash
+#!/bin/sh
+ #备份桌面上的我的笔记到加密的压缩文件夹，然后在git  push到我的库去
+ #目标文件夹
+ backupdir=/Users/ls3686/github-station/
+ #原始文件夹
+ rootdir=/Users/ls3686/Desktop/我的笔记/
+ workspace=/Users/ls3686/workspace/learn/
+ #今天到日期
+ today=`date +%Y%m%d`
+ fourday=`date -v-4d +%Y%m%d`
+ threeday=`date -v-3d +%Y%m%d`
+ fiveday=`date -v-5d +%Y%m%d`
+ twoday=`date -v-2d +%Y%m%d`
+ #开始
+ echo '开始备份'
+ cd $rootdir
+ zip -P mypassword 'mynotes'-$today.zip *.*
+ mv 'mynotes'-$today.zip $backupdir
+ pushd $backupdir
+ rm 'mynotes'-$twoday.zip
+ rm 'mynotes'-$threeday.zip
+ rm 'mynotes'-$fourday.zip
+ rm 'mynotes'-$fiveday.zip
+ rm 'mylearn'-$fourday.zip
+ rm 'mylearn'-$fiveday.zip
+ git add .
+ git commit -m $today-'update'
+ git push mygit master -f
+    ```
+
+- 添加shell的alias
+因为喜欢用文本的形式记录平时的一些事情，所以创建了一个template，当我在shell中输入trd的时候就会一个md的模版出来，供我进行记录。模版中提供当前日期，时间，分类等初始信息。并且存在一个可以和gitlab同步的文件夹下面，这样当同步gitlab的时候就会顺便同步它。不会导致混乱和遗失。
+
+- 生成读书笔记的文件
+
+创建了读书笔记的template，然后设定了一个dsbj的alias在profile里面。在terminal中输入dsbj就会要求输入主题，然后将主题添入模版第三行的title项中，再写入第九行的标题栏。
+完成后，将这个template重名为当日-主题.md文件，并用vi打开。
+
+
+```bash
+#!/bin/bash
+today=`date +%Y-%m-%d-%H-%M`
+echo 今天读书笔记想要写什么主题？
+read topic
+title="title: "$topic
+head="# "$topic
+cp template_dushubiji template_dushubiji0
+sed -i '' "3s/.*/$title/" template_dushubiji0
+sed -i '' "9s/.*/$head/" template_dushubiji0
+mv template_dushubiji0 $today-$topic.md && vi /Users/ls3686/mynotes/我的笔记/读书笔记/$today-$topic.md
+```
