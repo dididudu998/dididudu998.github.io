@@ -1,6 +1,12 @@
 @echo off
 REM Deploy Astro Fuwari blog to GitHub Pages
-REM Handles the _astro/ -> astro/ rename for GitHub Pages compatibility
+REM Usage: deploy.bat "your commit message"
+
+if "%~1"=="" (
+    set "MSG=Update blog %date%"
+) else (
+    set "MSG=%~1"
+)
 
 echo ==^> Building Astro site...
 call pnpm build
@@ -19,11 +25,11 @@ if exist "_astro" (
     echo    Done renaming.
 )
 
-echo ==^> Deploying to GitHub Pages...
+echo ==^> Deploying: %MSG%
 if exist ".git" rmdir /s /q .git
 git init
 git add -A
-git commit -m "Deploy Fuwari blog"
+git commit -m "%MSG%"
 git branch -M master
 git remote add origin git@github.com:dididudu998/dididudu998.github.io.git
 git push --force origin master

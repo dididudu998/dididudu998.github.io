@@ -17,7 +17,7 @@ tags: ["书籍", "阅读"]
 
 ### 结构
 
-![falsh](\images\tupian\flash的结构.jpg)
+![falsh](/images/tupian/flash的结构.jpg)
 
 ![闪存单元](/images/tupian/闪存单元.jpg)
 
